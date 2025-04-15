@@ -1,5 +1,10 @@
-echo "Hello, DevOps!" > ~/hello.txt && cat ~/hello.txt
+echo '"Hello, DevOps!' > ~/hello.txt && cat ~/hello.txt
 # echo - вывод строки
 # > - настройка потока вывода на файл hello.txt
 # cat - вывод содержимого файла
 # && используем для объединения команд - правая часть выполнится только тогда, когда левая завершится успешно
+
+
+# вторая версия (c tee)
+echo '"Hello, DevOps!' | tee ~/hello.txt && cat ~/hello.txt
+# здесь через конвейер с помощью tee записываем строку в файл
