@@ -1,0 +1,3 @@
+grep -i "error" /var/log/syslog | head -n 5
+# grep - поиск нужного слова в файле (с помощью флага -i)
+# head -n - вывод первых n строк
